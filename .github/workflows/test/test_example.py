@@ -1,4 +1,4 @@
-print("Running test_example.py")# This is a simple test file with two test cases
+print("Running test_example.py")
 
 def test_addition():
     """A simple test to check addition"""
