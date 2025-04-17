@@ -1,6 +1,4 @@
-
-
-      name: Deploy to GitHub Pages
+name: Run Tests
 
 on:
   push:
@@ -8,7 +6,7 @@ on:
       - main
 
 jobs:
-  deploy:
+  test:
     runs-on: ubuntu-latest
 
     steps:
@@ -27,10 +25,4 @@ jobs:
 
       - name: Run tests
         run: |
-          pytest
-
-      - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v4
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./dist
+          pytest test/
