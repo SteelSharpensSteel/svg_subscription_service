@@ -9,3 +9,4 @@ def test_subtraction():
     assert 5 - 3 == 2
 def test_example():
     assert 1 + 1 == 2
+    print("End of test_example.py")
